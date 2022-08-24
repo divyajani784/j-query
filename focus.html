@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>focus</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	
+</head>
+<body>
+	<form>
+		name<input type="text" id="names" name="">
+		password<input type="password" id="pass" name="">
+		<button class="sub">submit</button>
+	</form>
+	</body>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#names").focus(function(){
+			$("#names").css("backgroundColor","pink")
+
+		});
+
+		$("#pass").focus(function(){
+			$("#pass").css("backgroundColor","blue")
+
+		});
+
+
+	});
+</script>
+</html>
