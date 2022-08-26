@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>slideup</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<style type="text/css">
+		.one{
+			height: 100px;
+			width: 100%;
+			background-color: pink;
+		}
+		.two{
+			height: 100px;
+			width: 100%;
+			background-color: blueviolet;
+			/*display: none;*/
+		}
+
+	</style>
+</head>
+<body>
+	<div class="one"></div><br>
+	<button style="margin-left: 500px;">click here to slide up</button><br><br>
+	<div class="two"></div>
+
+</body>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("button").click(function(){
+			$(".two").slideUp()
+		});
+	});
+</script>
+</html>

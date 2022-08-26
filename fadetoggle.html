@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>fade in</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<style type="text/css">
+		.one{
+			height: 100px;
+			width: 100%;
+			background: hotpink;
+			display: none;
+		}
+		.two{
+			display: none;
+			height: 100px;
+			width: 100%;
+			background: yellowgreen;
+		}
+		.thrr{
+			display: none;
+			height: 100px;
+			width: 100%;
+			background: blue;
+		}
+	</style>
+</head>
+<body>
+	<div class="one"></div>
+	<div class="two"></div>
+	<div class="thrr"></div>
+	<br><br>
+
+	<button style="margin-left: 500px;">click here</button>
+
+</body>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("button").click(function(){
+			$(".one").fadeToggle(3500)
+			$(".two").fadeToggle(5500)
+			$(".thrr").fadetoggle(8500)
+		});
+	});
+</script>
+</html>

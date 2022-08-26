@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>fade out</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<style type="text/css">
+		.one{
+			height: 100px;
+			width: 100%;
+			background: hotpink;
+			
+		}
+		.two{
+			
+			height: 100px;
+			width: 100%;
+			background: yellowgreen;
+		}
+		.thr{
+		
+			height: 100px;
+			width: 100%;
+			background: blueviolet;
+		}
+	</style>
+</head>
+<body>
+	<div class="one"></div>
+	<div class="two"></div>
+	<div class="thr"></div>
+	<br><br>
+
+	<button style="margin-left: 500px;">click here</button>
+
+</body>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("button").click(function(){
+			$(".one").fadeOut(3500)
+			$(".two").fadeOut(5500)
+			$(".thr").fadeOut(8500)
+		});
+	});
+</script>
+</html>

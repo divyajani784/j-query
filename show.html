@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>hide and show</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+	<iframe src="https://www.youtube.com/embed/watch?v=j54R3P76aS4"></iframe>
+	<button>hide</button>
+	<button id="shw">show</button>
+	
+</body>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("button").click(function(){
+			$("iframe").hide();
+		});
+
+		$("#shw").click(function(){
+			$("iframe").show();
+		});
+
+		
+	});
+</script>
+</html>
