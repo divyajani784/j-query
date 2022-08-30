@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>callback</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+	<form>
+		Username: <input type="text" name=""><br><br>
+		Password: <input type="password" name=""><br><br>
+		<button>submit</button>
+	</form>
+
+</body>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("button").click(function(){
+			alert("you have submitted")
+		});
+	});
+</script>
+</html>
